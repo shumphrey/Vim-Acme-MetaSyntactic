@@ -32,8 +32,8 @@ metasyntactic.vim requires key bindings in your .vimrc to work.
 Something along the lines of:
 
 ```
-imap ,n <C-R>=GetMetaSyntacticWord()<C-M>
-map ,n "=GetMetaSyntacticWord()<C-M>p
+imap <Leader>n <C-R>=GetMetaSyntacticWord()<C-M>
+map <Leader>n "=GetMetaSyntacticWord()<C-M>p
 ```
 
 (See :help Leader)
