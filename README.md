@@ -23,7 +23,10 @@ git submodule add git://github.com/shumphrey/Vim-Acme-MetaSyntactic.git bundle/m
 ### Without Pathogen
 
 Checkout the module somewhere.
-Then inside the .vimrc file, source metasyntactic.vim
+Then inside the .vimrc file, 
+```
+source metasyntactic.vim
+```
 
 Set Up
 ------
