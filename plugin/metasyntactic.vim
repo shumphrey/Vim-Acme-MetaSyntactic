@@ -85,7 +85,7 @@ endfun
 " Sets the theme
 fun! SetMetaSyntacticTheme(theme)
     if has('perl')
-        function! s:defPerlMetaSynTheme()
+        function! s:defPerlMetaSynTheme(theme)
         perl <<EOF
             my $theme = VIM::Eval('a:theme');
             our $meta;
@@ -98,7 +98,7 @@ fun! SetMetaSyntacticTheme(theme)
             VIM::Msg("Theme is " . $theme);
 EOF
         endfunction
-        call s:defPerlMetaSynTheme()
+        call s:defPerlMetaSynTheme(a:theme)
     endif
 endfun
 
